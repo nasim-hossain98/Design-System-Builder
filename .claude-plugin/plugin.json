@@ -1,0 +1,42 @@
+{
+  "name": "design-system-builder",
+  "version": "1.0.0",
+  "description": "A Claude skill for creating comprehensive design systems with tokens, components, and documentation",
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/design-system-builder"
+  },
+  "keywords": [
+    "design-system",
+    "design-tokens",
+    "components",
+    "storybook",
+    "ui-library",
+    "claude-skill"
+  ],
+  "license": "MIT",
+  "skills": [
+    "./skills/design-system-builder"
+  ],
+  "engines": {
+    "claude": ">=1.0.0"
+  },
+  "categories": [
+    "Development",
+    "Design",
+    "UI/UX"
+  ],
+  "tags": [
+    "design-system",
+    "component-library",
+    "tailwind",
+    "css",
+    "react",
+    "storybook",
+    "documentation"
+  ]
+}
