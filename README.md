@@ -16,18 +16,26 @@ This skill helps you build complete design systems including:
 
 ### Option 1: From GitHub (Recommended)
 ```bash
-# In Claude Code, run:
+# First, add the marketplace
 /plugin marketplace add https://github.com/nasim-hossain98/Design-System-Builder.git
-/plugin install design-system-builder@nasim-hossain98
+
+# Then install the skill
+/plugin install design-system-builder
 ```
 
-### Option 2: Local Installation
+### Option 2: Direct Installation
 ```bash
 # Clone this repository
 git clone https://github.com/nasim-hossain98/Design-System-Builder.git
 
-# In Claude Code, run:
+# Install directly from the cloned path
 /plugin install /path/to/Design-System-Builder
+```
+
+### Option 3: Manual Installation
+Copy the skill files to your Claude skills directory:
+```bash
+# Copy SKILL.md and folders to ~/.claude/skills/design-system-builder/
 ```
 
 ## 🚀 Usage Examples
