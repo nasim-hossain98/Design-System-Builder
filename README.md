@@ -14,35 +14,58 @@ This skill helps you build complete design systems including:
 
 ## 📦 Installation
 
-### Option 1: Direct Installation
+### Option 1: From GitHub (Recommended)
 ```bash
 # In Claude Code, run:
-/plugin install /path/to/design-system-builder
+/plugin marketplace add https://github.com/nasim-hossain98/Design-System-Builder.git
+/plugin install design-system-builder@nasim-hossain98
 ```
 
-### Option 2: From GitHub (Recommended)
-1. Fork or clone this repository
-2. In Claude Code, run:
+### Option 2: Local Installation
 ```bash
-/plugin marketplace add https://github.com/yourusername/design-system-builder
-/plugin install design-system-builder@yourusername
+# Clone this repository
+git clone https://github.com/nasim-hossain98/Design-System-Builder.git
+
+# In Claude Code, run:
+/plugin install /path/to/Design-System-Builder
 ```
 
 ## 🚀 Usage Examples
 
 Once installed, you can ask Claude:
 
-- "Create a design system for my fintech app with professional blue colors"
-- "Build a component library with Storybook for my React project"
-- "Generate design tokens from my existing brand guidelines"
-- "Set up a dark mode-compatible design system"
+- "Create a design system for my React app with blue colors"
+- "Build a component library with Storybook"
+- "Generate design tokens from my brand guidelines"
+- "Set up a dark mode compatible design system"
 
-## 📁 What's Included
+### Example Commands:
+```
+"Create a design system for my fintech app with professional blue colors"
+"Build a component library with Storybook for my React project"
+"Generate design tokens from my existing brand guidelines"
+"Set up a dark mode-compatible design system"
+```
 
-- **Design Token Templates**: JSON, CSS, SCSS, and Tailwind formats
-- **Component Templates**: React/TypeScript with accessibility built-in
-- **Storybook Setup**: Pre-configured with addons and examples
-- **Documentation**: Comprehensive guides and specifications
+## 📁 Repository Structure
+
+```
+Design-System-Builder/
+├── SKILL.md                          # Main skill definition
+├── README.md                         # This file
+├── assets/                           # Templates and configurations
+│   ├── design-tokens-template.json   # JSON token template
+│   ├── css-custom-properties.css     # CSS variables template
+│   ├── tailwind-config.js           # Tailwind configuration
+│   ├── storybook-main.js            # Storybook main config
+│   ├── storybook-preview.js         # Storybook preview config
+│   ├── component-story-template.js  # Story template
+│   ├── button-spec-template.md      # Button component spec
+│   ├── component-spec-template.md   # Generic component spec
+│   └── component-template.tsx       # React component template
+└── references/
+    └── workflow.md                  # Detailed workflow guide
+```
 
 ## 🎨 Features
 
@@ -63,14 +86,72 @@ The skill generates:
 - Accessibility attributes and ARIA labels
 - Responsive breakpoint definitions
 
-## 📋 Requirements
+## 📋 Quick Start
 
-No special requirements - the skill works out of the box with Claude Code!
+1. **Install the skill** using one of the methods above
+2. **Start Claude Code** in your terminal
+3. **Ask Claude to create a design system**:
+   ```
+   "Create a design system for my healthcare app with trustworthy blue colors"
+   ```
+4. **Receive your complete design system** with tokens, components, and documentation
+
+## 🎯 What You'll Get
+
+### Design Tokens
+- Color palette (primary, secondary, neutral, semantic)
+- Typography scale (fonts, sizes, weights, line heights)
+- Spacing system (margins, paddings, gaps)
+- Border radius, shadows, animation tokens
+- Breakpoint definitions
+
+### Component Specifications
+- Button variants and states
+- Form input specifications
+- Card/container components
+- Navigation components
+- Feedback components (alerts, toasts)
+
+### Configuration Files
+- Tailwind CSS config
+- CSS custom properties
+- SCSS variables
+- JSON tokens for cross-platform use
+
+### Documentation
+- Storybook stories
+- Usage guidelines
+- Accessibility specs
+- Responsive behavior docs
+
+## 🛠️ Development
+
+To contribute or modify this skill:
+
+1. Clone the repository
+2. Edit the templates in the `assets/` folder
+3. Update the workflow in `references/workflow.md`
+4. Test your changes with Claude Code
 
 ## 🤝 Contributing
 
-Feel free to submit issues or improvements!
+Feel free to submit issues, improvements, or additional templates!
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
 ## 📄 License
 
 MIT License - Use freely for personal or commercial projects.
+
+## 🌟 Show Your Support
+
+If this skill helps you, please give it a star on GitHub!
+
+---
+
+**Repository**: https://github.com/nasim-hossain98/Design-System-Builder.git
+**Issues**: https://github.com/nasim-hossain98/Design-System-Builder/issues
+**Pull Requests**: https://github.com/nasim-hossain98/Design-System-Builder/pulls
