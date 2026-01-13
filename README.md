@@ -17,7 +17,7 @@ This skill helps you build complete design systems including:
 ### Option 1: From GitHub (Recommended)
 ```bash
 # First, add the marketplace
-/plugin marketplace add https://github.com/nasim-hossain98/Design-System-Builder.git
+/plugin marketplace add https://github.com/nasim-hossain98/design-system-builder.git
 
 # Then install the skill
 /plugin install design-system-builder
@@ -26,10 +26,10 @@ This skill helps you build complete design systems including:
 ### Option 2: Direct Installation
 ```bash
 # Clone this repository
-git clone https://github.com/nasim-hossain98/Design-System-Builder.git
+git clone https://github.com/nasim-hossain98/design-system-builder.git
 
 # Install directly from the cloned path
-/plugin install /path/to/Design-System-Builder
+/plugin install /path/to/design-system-builder
 ```
 
 ### Option 3: Manual Installation
@@ -58,7 +58,7 @@ Once installed, you can ask Claude:
 ## 📁 Repository Structure
 
 ```
-Design-System-Builder/
+design-system-builder/
 ├── SKILL.md                          # Main skill definition
 ├── README.md                         # This file
 ├── assets/                           # Templates and configurations
@@ -160,6 +160,6 @@ If this skill helps you, please give it a star on GitHub!
 
 ---
 
-**Repository**: https://github.com/nasim-hossain98/Design-System-Builder.git
-**Issues**: https://github.com/nasim-hossain98/Design-System-Builder/issues
-**Pull Requests**: https://github.com/nasim-hossain98/Design-System-Builder/pulls
+**Repository**: https://github.com/nasim-hossain98/design-system-builder.git
+**Issues**: https://github.com/nasim-hossain98/design-system-builder/issues
+**Pull Requests**: https://github.com/nasim-hossain98/design-system-builder/pulls
