@@ -1,97 +1,146 @@
+---
+name: design-system-builder
+description: Creates production-ready design systems with tokens, components, and documentation. Use when building design systems from scratch or extracting from existing designs.
+---
+
 # Design System Builder
 
-A comprehensive Claude skill for creating production-ready design systems from scratch. This skill helps you build consistent, accessible, and well-documented design systems with design tokens, component specifications, and Storybook documentation.
-
-## Features
-
-- **Design Token Generation**: Create systematic color palettes, typography scales, spacing tokens, and more
-- **Component Specifications**: Detailed specs for buttons, forms, cards, and other UI components
-- **Multiple Format Support**: Export tokens as CSS custom properties, SCSS, JSON, or Tailwind configs
-- **Storybook Integration**: Pre-configured Storybook setup with templates and examples
-- **Accessibility First**: Built with WCAG 2.1 AA compliance in mind
-- **Dark Mode Support**: Semantic tokens that support theme switching
-- **Documentation**: Comprehensive documentation templates and guidelines
+Builds comprehensive design systems with design tokens, component specifications, and Storybook documentation.
 
 ## Quick Start
 
-1. Install the skill in Claude Code
-2. Ask Claude to create a design system for your project
-3. Provide your requirements (brand colors, component needs, etc.)
-4. Receive a complete design system package
+```
+User: "Create a design system for my fintech app with blue theme"
 
-## What's Included
+Claude: I'll create a complete design system with:
+1. Professional blue color palette
+2. Typography scale for financial data
+3. 8px grid spacing system
+4. Core components (buttons, forms, cards)
+5. Storybook setup with documentation
+```
+
+## When to Use
+
+- Starting new projects needing consistent design
+- Modernizing codebases with unified design language
+- Creating component libraries
+- Extracting systems from Figma/Sketch designs
+- Setting up Storybook documentation
+
+## Workflow
+
+### 1. Discovery
+- Project type and platforms
+- Existing brand guidelines
+- Component complexity needed
+- Target frameworks (React, Vue, etc.)
+
+### 2. Design Tokens
+- Color palette with semantic colors
+- Typography scale (font families, sizes, weights)
+- Spacing tokens (8px grid system)
+- Border radius, shadows, animations
+- Breakpoints for responsive design
+
+### 3. Components
+- Core components identification
+- State definitions (hover, active, disabled)
+- Accessibility requirements (WCAG 2.1 AA)
+- Responsive behavior specifications
+
+### 4. Implementation
+Generate in multiple formats:
+- CSS custom properties
+- SCSS variables
+- Tailwind configuration
+- JSON tokens for cross-platform
+- Style Dictionary setup
+
+## Outputs
 
 ### Design Tokens
-- Color system with primary, secondary, neutral, and semantic colors
-- Typography scale with font families, sizes, weights, and line heights
-- Spacing system based on consistent ratios
-- Border radius, shadows, and animation tokens
-- Breakpoint definitions for responsive design
+```css
+:root {
+  --color-primary-50: #e3f2fd;
+  --color-primary-500: #2196f3;
+  --color-primary-900: #0d47a1;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --radius-sm: 0.25rem;
+}
+```
 
-### Component Templates
+### Component Specs
+- Button variants and states
+- Form input specifications
+- Card/container components
+- Navigation patterns
+- Feedback components
+
+### Documentation
+- Storybook stories
+- Usage guidelines
+- Accessibility specs
+- Responsive behavior docs
+
+## Templates
+
+The skill includes:
+- Design token templates (CSS, SCSS, JSON, Tailwind)
+- Component specification templates
+- Storybook configuration
 - React/TypeScript component templates
-- Storybook story templates
-- Component specification documents
-- Accessibility guidelines
 
-### Configuration Files
-- Tailwind CSS configuration
-- CSS custom properties
-- Style Dictionary setup
-- Build configuration examples
+See [templates/](#) for all available templates.
 
-## Example Usage
+## Examples
 
+### Creating from Scratch
 ```
-User: "Create a design system for my fintech application with a professional blue theme"
+User: "Build a design system for healthcare app"
 
-Claude: I'll create a comprehensive design system for your fintech app including:
-1. Professional blue color palette with semantic colors
-2. Typography scale suitable for financial data
-3. 8px grid spacing system
-4. Core components (buttons, forms, cards, tables)
-5. Storybook setup with documentation
-6. Dark mode support
-7. Accessibility compliance
+Claude: Creating healthcare-focused design system:
+1. Calming blue-green color palette
+2. High contrast for accessibility
+3. Clear typography for medical data
+4. Form components for patient inputs
+5. Warning/success states for alerts
 ```
 
-## File Structure
-
+### Extracting from Figma
 ```
-design-system-builder/
-├── .claude-plugin/
-│   ├── plugin.json
-│   └── skills/
-│       └── design-system-builder/
-│           ├── skill.md
-│           ├── assets/
-│           │   ├── design-tokens-template.json
-│           │   ├── css-custom-properties.css
-│           │   ├── tailwind-config.js
-│           │   ├── storybook-main.js
-│           │   ├── storybook-preview.js
-│           │   ├── component-story-template.js
-│           │   ├── button-spec-template.md
-│           │   ├── component-spec-template.md
-│           │   └── component-template.tsx
-│           └── references/
-│               └── workflow.md
-└── SKILL.md
+User: "I have a Figma design, extract the design system"
+
+Claude: I'll analyze your Figma and extract:
+1. Color values → semantic tokens
+2. Text styles → typography scale
+3. Spacing → token system
+4. Components → specifications
+5. Export tokens in your format
 ```
 
 ## Best Practices
 
-1. Always start with accessibility requirements
-2. Use systematic scales for spacing and typography
-3. Create semantic tokens that abstract raw values
-4. Test components in isolation with Storybook
-5. Document design decisions and rationale
-6. Support multiple export formats for flexibility
+1. **Accessibility First**: WCAG 2.1 AA minimum
+2. **Systematic Scales**: 8px grid, modular typography
+3. **Semantic Tokens**: Abstract raw values
+4. **Test Isolation**: Storybook for components
+5. **Document Rationale**: Explain design decisions
+6. **Multiple Formats**: Support different platforms
 
-## Contributing
+## Common Mistakes
 
-Feel free to contribute additional templates, improve existing ones, or suggest new features for the design system builder.
+- Inconsistent spacing without system
+- Too many color variations
+- Missing component states
+- Poor contrast ratios
+- No responsive considerations
+- Overly complex token nesting
 
-## License
+## Advanced
 
-MIT License - Feel free to use this skill for personal or commercial projects.
+For complex needs, see:
+- [reference/tokens.md](reference/tokens.md) - Token architecture
+- [reference/components.md](reference/components.md) - Component patterns
+- [reference/storybook.md](reference/storybook.md) - Documentation setup
